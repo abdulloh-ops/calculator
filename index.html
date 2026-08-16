@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="icon" type="image/png" href="calculator.png.jpg">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="Calculater">
+        <div class="display">
+        <input type="text" name="no1" id="no1">
+        <div id="result"></div>
+    </div>
+          <div>
+              <button onclick="clearInput()">AC</button>
+              <button onclick="calcWrite('%')">%</button>
+              <button onclick="deleteOne()">⌫</button> 
+              <button onclick="calcWrite('÷')">÷</button>
+          </div>
+          <div>
+              <button onclick="calcWrite('1')">1</button>
+              <button onclick="calcWrite('2')">2</button>
+              <button onclick="calcWrite('3')">3</button>
+              <button onclick="calcWrite('×')">×</button>
+          </div>
+          <div>
+              <button onclick="calcWrite('4')">4</button>
+              <button onclick="calcWrite('5')">5</button>
+              <button onclick="calcWrite('6')">6</button>
+              <button onclick="calcWrite('-')">-</button>
+          </div>
+          <div>
+              <button onclick="calcWrite('7')">7</button>
+              <button onclick="calcWrite('8')">8</button>
+              <button onclick="calcWrite('9')">9</button>
+              <button onclick="calcWrite('+')">+</button>
+          </div>
+          <div>
+              <button onclick="window.location.href='history.html'">🧾</button>
+              <button onclick="calcWrite('0')">0</button>
+              <button onclick="calcWrite('.')">.</button>
+              <button class="equal" onclick="calc()">=</button>
+          </div>
+    </div>
+          <script src="calc.js"></script>
+</body>
+</html>

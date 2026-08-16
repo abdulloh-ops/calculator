@@ -1,1 +1,141 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
+/* Calculator buttonlari */
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: #555;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+button:focus{
+    outline: none;
+}
+
+#no1{
+    width: 325px;
+    height: 70px;
+    background-color: rgb(90, 88, 88);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+.equal{
+    background-color: orange;
+}
+
+.equal:hover{
+    background: darkorange;
+}
+
+
+/* HISTORY */
+
+.history{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.history h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* History panel */
+
+#historyList{
+    color: white;
+    font-size: 20px;
+
+    width: 300px;
+    height: 380px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    text-align: left;
+}
+
+
+/* History buttonlari */
+
+.history-btn{
+    width: 100px;
+    height: 50px;
+
+    border-radius: 15px;
+
+    background-color: orange;
+    color: white;
+
+    font-size: 18px;
+
+    margin: 20px 10px;
+}
+
+.history-btn:hover{
+    background-color: darkorange;
+}
+.display {
+    width: 345px;
+    height: 90px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#no1 {
+    width: 325px;
+    height: 70px;
+    background-color: rgb(90, 88, 88);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#result {
+    color: #aaa;
+    font-size: 28px;
+    text-align: right;
+    position: absolute;
+    right: 31px;
+    bottom: 8;
+}
